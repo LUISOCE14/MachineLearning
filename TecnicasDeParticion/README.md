@@ -1,3 +1,5 @@
+El codigo contine diferentes funciones con diferentes tecnicas de particion de data set que es una parte importante el los algoritmos de machine learning.
+
 En este proyecto me toco desarrollar las diferentes tecnicas de particion de data set como: entrenamiento,prueba y validacion(en algunos casos).
 
 Primero importe las librerias que voy usar y despues inicialize los parametros y carge  el data set,podemos partirlo para poder facilitarno el trabajo.
@@ -73,9 +75,13 @@ Este metodo es conocido, es el kfolds es muy usado en el machine learning.
         calcula para determinar los índices que se usarán como datos de prueba en esta         
         iteración.
         Se extraen de datos usando los índices de prueba_inicio a prueba_fin.
-        Datos_entrenamiento se forma concatenando las partes de datos antes y después del fold          de prueba. Estos datos se utilizan como datos de entrenamiento en esta iteración     
-        específica.
+        Datos_entrenamiento se forma concatenando las partes de datos antes y después del fold de prueba. 
+        Estos datos se utilizan como datos de entrenamiento en esta iteración específica.
         En cada iteracio guada el data set de entrenamiento y prueba en un fold
     Una vez termina develve la lista con todos los folds
+
+Funcion Graficar
+     La funcion recibe como parametros los diferentes arreglos creador apartir de algun metodo descrito con anterioridad
+     y grafica con puntos como se ven los diferentes data set de entrenamiento,prueba y validacion.Lo hace en forma de comparacion.
 
   
