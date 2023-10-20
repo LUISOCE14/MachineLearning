@@ -1,4 +1,4 @@
-El codigo continenediferentes funciones con diferentes tecnicas de particion de data set que es una parte importante el los algoritmos de machine learning.
+El codigo continene diferentes funciones con diferentes tecnicas de particion de data set que es una parte importante el los algoritmos de machine learning.
 
 En este proyecto me toco desarrollar las diferentes tecnicas de particion de data set como: entrenamiento,prueba y validacion(en algunos casos).
 
