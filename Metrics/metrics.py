@@ -44,6 +44,8 @@ class Metrics:
         recall = truePositive / (truePositive + falsePositive)
         return recall
 
+    #Regression
+
     def f1(self, y_true, y_pred):
         precision = self.precision(y_true, y_pred)
         recall = self.recalll(y_true, y_pred)
