@@ -3,7 +3,8 @@ import numpy as np
 
 class Metrics:
 
-    def confusionMatrix(self, y_true, y_pred):
+    
+    def confusionMatrix(y_true, y_pred):
 
         true_positives = sum((y_true == 1) & (y_pred == 1))
         false_positives = sum((y_true == 0) & (y_pred == 1))
@@ -53,3 +54,18 @@ class Metrics:
         f1 = 2 * ((precision * recall) / (precision + recall))
 
         return f1
+
+    def mse(self, y_true,y_pred):
+        n =len(y_true)
+        mse = sum((y_pred - y_true)**2) / n
+        return mse
+
+    def mae(self, y_true, y_pred):
+        n = len(y_true)
+        mae = sum(y_pred - y_true) / n
+        return mae
+
+    def rmse(self, y_true, y_pred):
+        rmse = np.sqrt(self.mse(y_true, y_pred))
+        return rmse
+
