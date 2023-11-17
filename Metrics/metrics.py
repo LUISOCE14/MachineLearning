@@ -4,7 +4,7 @@ import numpy as np
 class Metrics:
 
     
-    def confusionMatrix(y_true, y_pred):
+    def confusionMatrix(self,y_true, y_pred):
 
         true_positives = sum((y_true == 1) & (y_pred == 1))
         false_positives = sum((y_true == 0) & (y_pred == 1))
